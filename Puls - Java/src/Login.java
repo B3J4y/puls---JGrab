@@ -29,7 +29,7 @@ public class Login {
 		
 		try {
 //			URL url = new URL("https://puls.uni-potsdam.de/qisserver/rds?state=user&type=1&asdf=jbernoth&fdsa=bl4bl411&category=auth.login&startpage=portal.vm");
-			URL url = new URL("https://puls.uni-potsdam.de/qisserver/rds;jsessionid=A8846CE175C06127D03537F63E13DA8D.node11?state=wplan&amp;week=-2&amp;act=show&amp;pool=&amp;show=liste&amp;P.vx=lang&amp;P.subc=plan");
+			URL url = new URL("https://puls.uni-potsdam.de/qisserver/rds;jsessionid=A36DD10F314208090387B82456C55B2C.node11?state=wplan&amp;week=-2&amp;act=show&amp;pool=&amp;show=liste&amp;P.vx=lang&amp;P.subc=plan");
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod( "GET" );
 			BufferedReader reader = new BufferedReader(
