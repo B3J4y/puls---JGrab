@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-i18n-ja.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-jdbc.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Carl/Downloads/dd-plist-r59/dd-plist.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
