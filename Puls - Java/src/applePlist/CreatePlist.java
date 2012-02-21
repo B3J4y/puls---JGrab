@@ -1,6 +1,7 @@
 package applePlist;
 
 import java.io.File;
+import java.util.Date;
 
 import com.dd.plist.*;
 
@@ -43,7 +44,11 @@ public class CreatePlist {
 	 */
 	public static void main(String[] args) {
 		new CreatePlist();
-
+		Date data = new Date();
+		data.getTime();
+		System.out.println(data);
+		NSDate nsdate = new NSDate(data);
+		System.out.println(nsdate);
 	}
 
 }

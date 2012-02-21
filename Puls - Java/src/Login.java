@@ -13,7 +13,6 @@ import writers.SimpleTextWriter;
 public class Login {
 
 	public Login() {
-		// TODO Auto-generated constructor stub
 		connectPuls();
 	}
 	
@@ -72,7 +71,6 @@ public class Login {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new Login();
 	}
 

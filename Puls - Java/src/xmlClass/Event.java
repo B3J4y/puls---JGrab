@@ -6,7 +6,8 @@ import javax.xml.bind.annotation.*;
 
 
 @XmlRootElement
-class Event {
+
+public class Event {
 
 	private Date time_begin;
 	private Date time_end;

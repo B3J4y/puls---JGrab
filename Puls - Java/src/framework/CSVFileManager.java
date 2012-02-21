@@ -68,7 +68,9 @@ public class CSVFileManager {
 	 */
 	public static void main(String[] args) throws IOException {
 		CSVFileManager mgr = new CSVFileManager();
-		System.out.println(mgr.readFile("res/types.txt"));
+		System.out.println(mgr.readFile("res/pulsSheduleObjects.txt"));
+		System.out.println("Freizeile");
+		System.out.println(mgr.getCSVObject().toString());
 	}
 
 }
