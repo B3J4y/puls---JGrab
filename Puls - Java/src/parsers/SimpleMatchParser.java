@@ -61,12 +61,12 @@ public class SimpleMatchParser {
 		CSVFileManager csvMgr = new CSVFileManager();
 		SimpleMatchParser parser = new SimpleMatchParser(TokenType.parse(csvMgr
 				.readFile("res/pulsSheduleObjects.txt").getCSVObject()));
-        for(Token t : parser.parse(txt)){
-		String txt = "Hallo du schoene Welt, wie geht es <b>dir</b> heute? Hast du gut geschlafen oder nicht?";
+//        for(Token t : parser.parse(txt)){
+//		String txt = "Hallo du schoene Welt, wie geht es <b>dir</b> heute? Hast du gut geschlafen oder nicht?";
         List<TokenType> types = new Vector<TokenType>();
         types.add(new TokenType("everything bold", "<b>.*</b>", "catches everything in <b> tags"));
         
-        for(Token t : (new SimpleMatchParser(types)).parse(txt)){
+        for(Token t : parser.parse(txt)){
         	System.out.println(t);
         }
 		
