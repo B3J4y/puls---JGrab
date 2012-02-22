@@ -42,7 +42,6 @@ public class SimpleMatchParser {
 				tokens.add(new Token(type, matcher.group(), matcher.start(),
 						matcher.end()));
 			}
-		System.out.println();
 		}
 		System.out.println("SimpleMatchParser.parse(for:"+forloops+",while:"+whileloops+") -> " + tokens + ";");
 		return tokens;

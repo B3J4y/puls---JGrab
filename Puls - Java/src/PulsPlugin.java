@@ -20,18 +20,25 @@ public class PulsPlugin {
 		}
 	}
 	
-	public String getSessionId(){
+	public Vector<String> getSessionId(){
 		
-		String resString ="";
+		Vector<String> resString = new Vector<String>();
 		CSVFileManager csvMgr = new CSVFileManager();
 		try {
 			SimpleMatchParser parser = new SimpleMatchParser(TokenType.parse(csvMgr
 					.readFile("res/SessionID.txt").getCSVObject()));
 			List<Token> result = parser.parse(answer);
 			System.out.println("------------ SessionID "+ result.get(0).content.split("=")[1].split("\\.")[0] +" ---------------");
-			resString = result.get(0).content.split("=")[1].split("\\.")[0] ;
+			resString.add(result.get(0).content.split("=")[1].split("\\.")[0]);
+			String strName ="";
+			for (Token tkn : result){
+				if (tkn.type.name.contains("Name")){
+					strName = tkn.content;
+				}
+			}
+			System.out.println("------------ Hallo " + strName   +  " ---------------");
 		} catch (Exception e){
-			resString = e.getMessage();
+			resString.add( e.getMessage() );
 		}
 
 		return resString;
@@ -63,8 +70,8 @@ public class PulsPlugin {
 	public static void main(String[] args){
 		PulsPlugin lePuls = new PulsPlugin("jbernoth", "bl4bl411");
 		//System.out.println(lePuls.answer);
-		String sessionID = lePuls.getSessionId();
-		lePuls.getBelegung(sessionID);
+		Vector<String> strVec = lePuls.getSessionId();
+		lePuls.getBelegung(strVec.get(0));
 //		System.out.println(lePuls.getSessionId());
 		System.out.println("fertig.");
 	}
