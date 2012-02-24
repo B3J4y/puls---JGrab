@@ -28,7 +28,7 @@ public class pulsParser {
 			List<Token> result = parser.parse(reader.readURL(filename));
 			writer.writeFile(""+result, OUTPUT_FILE);
 			for (Token tkn : result){
-				if (tkn.type.name.contains("Notiz")){
+				if (tkn.type.name.contains("Note")){
 					System.out.println(tkn.content);
 				}
 			}
