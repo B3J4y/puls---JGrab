@@ -1,3 +1,4 @@
 "Notiz", "<td class=\"notiz\" colspan=\"2\">.*<\/td>", "Anfangs + Endzeit, Häufigkeit der Termine"
 "<td class=\"notiz\" colspan=\"2\">([a-z]|[A-Z]|[0-9]|\s|\S)*"
 <td class=\"notiz\" colspan=\"2\">([a-z]|[A-Z]|[0-9]|[\t|\n|\x0B|\f|\r]|[:]|[\;]|[\&]|)*
+[\p{Cs}]|[\p{Lm}]

@@ -24,7 +24,7 @@ public class SimpleHttpReader {
 	public String readURL(String url) throws MalformedURLException, IOException {
 		String txt = "";
 
-		BufferedReader rd = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+		BufferedReader rd = new BufferedReader(new InputStreamReader((new URL(url)).openStream(), "UTF-8"));
 
 		String line = null;
 		int linecount = 0;
