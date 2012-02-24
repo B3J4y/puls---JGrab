@@ -41,7 +41,7 @@ public class pulsParser {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		new pulsParser("https://puls.uni-potsdam.de/qisserver/rds;jsessionid=91DD7ED4CA25B13C1EBE47F5E05CEC92.node11?state=wplan&value=43_2011&act=show&pool=&show=plan&P.vx=lang&P.subc=plan&week=51_2011");
+		new pulsParser("https://puls.uni-potsdam.de/qisserver/rds;jsessionid=7ACD83ED4BAFD3B720EE1C0C3ABFE8DC.node11?state=wplan&value=43_2011&act=show&pool=&show=plan&P.vx=lang&P.subc=plan&week=51_2011");
 
 	}
 

@@ -1,3 +1,3 @@
 "KursTitel", "title=.*\" class=\"ver\"" , "Kurstitel der noch ausgeschnitten werden muss"
-"Notiz", "<td class=\"notiz\" colspan=\"2\">.*</td>", "Anfangs + Endzeit, Häufigkeit der Termine"
+"Notiz", "<td class=\"notiz\" colspan=\"2\">([\s]|[\w]|[:]|[;]|[&]|[\.]|[,]|[-]|[\\u00F6])*", "Anfangs + Endzeit, Häufigkeit der Termine"
 "KursTitel2", "title=.*\" class=\"ver\"" , "Kurstitel der noch ausgeschnitten werden muss"
