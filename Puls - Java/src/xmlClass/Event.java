@@ -13,6 +13,7 @@ public class Event {
 	private String room;
 	private String instructor;
 	private String note;
+	private String url;
 	
 	
 	public void setTime_Begin(Date time_begin) {
@@ -53,6 +54,14 @@ public class Event {
 
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 	

@@ -1,3 +1,3 @@
 "KursTitel", "<a href=\"https:\/\/puls\.uni-potsdam\.de\/qisserver\/rds;jsessionid= . * title=.*\" class=\"ver\"" , "Kurstitel der noch ausgeschnitten werden muss"
-"Notiz", "<td class=\"notiz\" colspan=\"2\">([\s]|[\w]|[:]|[;]|[&]|[\.]|[,]|[-]|[\/]|[\p{L}&&[\P{Alpha}]])*", "Anfangs + Endzeit, H�ufigkeit der Termine"
+"Notiz", "<td class=\"notiz\" colspan=\"2\">([\s]|[\w]|[:]|[;]|[&]|[\.]|[,]|[-]|[\/]|[\p{L}&&[\P{Alpha}]])*", "Anfangs + Endzeit, Häufigkeit der Termine"
 "Note", "<td class=\"notiz\">([\s]|[\w]|[:]|[;]|[&]|[\.\?=\"]|[,]|[-]|[<a]|[\/]|[\p{L}&&[\P{Alpha}]])*class=\"ver\">([\s]|[\w]|[:]|[;]|[&]|[\.\?=\"]|[,]|[-]|[<a]|[\/]|[\p{L}&&[\P{Alpha}]])*", "Einrichtung und SWS"

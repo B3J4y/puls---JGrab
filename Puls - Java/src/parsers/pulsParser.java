@@ -18,7 +18,7 @@ public class pulsParser {
 		getObjects();
 	}
 	
-	public void getObjects(){
+	public List<Token> getObjects(){
 		try{
 			CSVFileManager csvMgr = new CSVFileManager();
 			SimpleHttpReader reader = new SimpleHttpReader();
@@ -26,23 +26,13 @@ public class pulsParser {
 					.readFile("res/pulsSheduleObjects.txt").getCSVObject()));
 			SimpleTextWriter writer = new SimpleTextWriter();
 			List<Token> result = parser.parse(reader.readURL(filename));
-			writer.writeFile(""+result, OUTPUT_FILE);
-			for (Token tkn : result){
-				if (tkn.type.name.contains("Note")){
-					System.out.println(tkn.content);
-				}
-			}
+			return result;
 		} catch(Exception e){
 			System.out.println(e.getMessage());
 			
 		}
+		return null;
 	}
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		new pulsParser("https://puls.uni-potsdam.de/qisserver/rds;jsessionid=B38BB6B89631738AE3B815E8E75629D7.node11?state=wplan&value=43_2011&act=show&pool=&show=plan&P.vx=lang&P.subc=plan&week=51_2011");
 
-	}
 
 }
